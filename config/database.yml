@@ -10,10 +10,10 @@ default: &default
 
 development:
   <<: *default
-  database: <%= ENV['POSTGRES_DB'] %>
-test:
-  <<: *default
-  database: <%= ENV['POSTGRES_TEST_DB'] %>
+  database: <%= ENV['POSTGRES_DB_DEV'] %>
+# test:
+#   <<: *default
+#   database: <%= ENV['POSTGRES_DB_TEST'] %>
 production:
   <<: *default
   database: <%= ENV['POSTGRES_DB'] %>
